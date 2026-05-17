@@ -1,5 +1,7 @@
+
 <div align="center">
-![](attachments/Pasted%20image%2020260424063607.png)
+  <img src="attachments/Pasted%20image%2020260424063607.png">
+</div>
 
 By: https://app.hackthebox.com/users/2727685
 
