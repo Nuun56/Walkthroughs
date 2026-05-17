@@ -35,7 +35,7 @@ Also **ports 443 and 8080 closed, not filtered**. The ports are reachable but no
 
 ### Website 
 
-![324](attachments/Pasted%20image%2020260424200344.png)
+<img src="attachments/Pasted%20image%2020260424200344.png" width="400">
 
 Only things we can interact with are:
 * Minecraft Server IP - copy 
@@ -84,7 +84,7 @@ Enabled PHP-FPM for smoother website handling on all domains. Enabled PHP-PEAR f
 
 This means there's a `phpinfo()` page exposed somewhere. I tried `http://pterodactyl.htb/phpinfo.php` and got:
 
-![627](attachments/Pasted%20image%2020260424140758.png)
+<img src="attachments/Pasted%20image%2020260424140758.png" width="627">
 
 Key findings were: 
 - **DOCUMENT_ROOT:** `/var/www/html`
@@ -161,7 +161,7 @@ We've discovered another subdomain.
 
 Most likely an admin control panel. We can access it after adding it to */etc/hosts* under the same machine IP as **pterodactyl.htb**
 
-![634](attachments/Pasted%20image%2020260424133856.png)
+<img src="attachments/Pasted%20image%2020260424133856.png" width="634">
 
 Successfully prompted for a login.
 
