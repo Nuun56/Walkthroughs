@@ -460,8 +460,13 @@ System Administrator
 
 The most critical takeaway is the explicit mention of the **udisks daemon.
 
->[!note] Udisks daemon
->What it is: `udisksd` is a background system service in Linux used to query and manipulate storage devices (like mounting USB drives, hard disks, etc.). Because it interacts directly with hardware and storage, it typically runs with high privileges (`root`).
+>[!NOTE]
+> **Udisks daemon**
+>What it is: `udisksd` is a background system service in Linux used
+>to query and manipulate storage devices (like mounting USB 
+>drives, hard disks, etc.). Because it interacts directly with 
+>hardware and storage, it typically runs with high privileges 
+>(`root`).
 
 It warns users _not to connect external media_. Since we are connected via a remote shell and cannot physically plug in a USB drive, the attack chain requires us to exploit this digitally
 ##### CVE-2025-6018 — Become allow_active
