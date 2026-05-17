@@ -1,7 +1,9 @@
-![](attachments/Pasted%20image%2020260424063607.png)
+![](../HTB/Labs/attachments/Pasted%20image%2020260424063607.png)
 
 By: https://app.hackthebox.com/users/2727685
+
 25.04.2026 - First interaction
+
 15.05.2026 - PWN & Finished Report
 
 ---
@@ -30,7 +32,7 @@ Also **ports 443 and 8080 closed, not filtered**. The ports are reachable but no
 
 ### Website 
 
-![473](attachments/Pasted%20image%2020260424200344.png)
+![473](../HTB/Labs/attachments/Pasted%20image%2020260424200344.png)
 
 Only things we can interact with are:
 * Minecraft Server IP - copy 
@@ -79,7 +81,7 @@ Enabled PHP-FPM for smoother website handling on all domains. Enabled PHP-PEAR f
 
 This means there's a `phpinfo()` page exposed somewhere. I tried `http://pterodactyl.htb/phpinfo.php` and got:
 
-![627](attachments/Pasted%20image%2020260424140758.png)
+![627](../HTB/Labs/attachments/Pasted%20image%2020260424140758.png)
 
 Key findings were: 
 - **DOCUMENT_ROOT:** `/var/www/html`
@@ -156,7 +158,7 @@ We've discovered another subdomain.
 
 Most likely an admin control panel. We can access it after adding it to */etc/hosts* under the same machine IP as **pterodactyl.htb**
 
-![634](attachments/Pasted%20image%2020260424133856.png)
+![634](../HTB/Labs/attachments/Pasted%20image%2020260424133856.png)
 
 Successfully prompted for a login.
 
