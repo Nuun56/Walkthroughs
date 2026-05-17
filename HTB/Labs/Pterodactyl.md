@@ -92,7 +92,7 @@ Key findings were:
 - **include_path:** `/usr/share/php/PEAR` ← [PEAR](../../1-General/3-Languages/PHP/PEAR.md) is accessible!
 >[!NOTE]
 > **What is PEAR?** 
->PEAR (PHP Extension and Application Repository) is like a package manager for PHP — similar to `apt` for Linux or `pip` for Python. It comes with a script called `pearcmd.php` that manages packages.
+>PEAR (PHP Extension and Application Repository) is like a package manager for PHP — similar to `pt` for Linux or `pip` for Python. It comes with a script called `pearcmd.php` that manages packages.
 - **disable_functions:** none! ← can execute system commands
 - **USER:** `wwwrun`
 
