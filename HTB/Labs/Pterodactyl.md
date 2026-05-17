@@ -90,7 +90,7 @@ Key findings were:
 - **DOCUMENT_ROOT:** `/var/www/html`
 - **SCRIPT_FILENAME:** `/var/www/html/phpinfo.php`
 - **include_path:** `/usr/share/php/PEAR` ← [PEAR](../../1-General/3-Languages/PHP/PEAR.md) is accessible!
->[!INFO]
+>[!NOTE]
 > **What is PEAR?** 
 >PEAR (PHP Extension and Application Repository) is like a package manager for PHP — similar to `apt` for Linux or `pip` for Python. It comes with a script called `pearcmd.php` that manages packages.
 - **disable_functions:** none! ← can execute system commands
@@ -105,7 +105,7 @@ Key findings were:
 php script.php arg1 arg2
 ```
 
->[!INFO] 
+>[!NOTE] 
 >**register_argc_argv**
 [register_argc_argv](../../1-General/3-Languages/PHP/register_argc_argv) is a PHP setting that when turned **On**, makes PHP also accept arguments passed via the **URL query string** and treat them as if they were command line arguments.
 
@@ -234,7 +234,7 @@ We got the APP_KEY (else known as [Laravel Key](../../1-General/Concepts/Laravel
 
 ---
 
->[!INFO] 
+>[!NOTE] 
 >**Laravel APP_KEY**
 >The Laravel application key is a secret key used to:
 >1. **Encrypt/decrypt** cookies and session data
@@ -266,7 +266,7 @@ Note: the `{{` and `}}` around part of it in the raw output were just formatting
 
 ### Returning back to PEAR
 
->[!CITE]
+>[!NOTE]
 >**Maximum impact**
 >While **CVE-2025-49132** is fundamentally a Path Traversal bug in the `locales` feature, its capability isn't limited to just reading files. In **Phase 1**, we use the traversal to disclose sensitive configuration files (the database credentials and the Laravel App Key). In **Phase 2**, we leverage that exact same vulnerable endpoint alongside the leaked cryptographic data to trigger an unauthenticated Remote Code Execution (RCE) via PHP object handling.
 
