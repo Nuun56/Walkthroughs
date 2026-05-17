@@ -90,7 +90,8 @@ Key findings were:
 - **DOCUMENT_ROOT:** `/var/www/html`
 - **SCRIPT_FILENAME:** `/var/www/html/phpinfo.php`
 - **include_path:** `/usr/share/php/PEAR` ← [PEAR](../../1-General/3-Languages/PHP/PEAR.md) is accessible!
->[!info] What is PEAR? 
+>[!INFO]
+> **What is PEAR?** 
 >PEAR (PHP Extension and Application Repository) is like a package manager for PHP — similar to `apt` for Linux or `pip` for Python. It comes with a script called `pearcmd.php` that manages packages.
 - **disable_functions:** none! ← can execute system commands
 - **USER:** `wwwrun`
@@ -104,7 +105,8 @@ Key findings were:
 php script.php arg1 arg2
 ```
 
->[!info] register_argc_argv
+>[!INFO] 
+>**register_argc_argv**
 [register_argc_argv](../../1-General/3-Languages/PHP/register_argc_argv) is a PHP setting that when turned **On**, makes PHP also accept arguments passed via the **URL query string** and treat them as if they were command line arguments.
 
 We saw in **phpinfo** that it was **On** — meaning we can pass "command line arguments" to *PHP scripts* through the URL.
@@ -180,7 +182,7 @@ It worked. We have recovered database **credentials**:
 **Database:** `panel`
 **Host:** `127.0.0.1:3306`
 
->[!tip]
+>[!TIP]
 >Never give up after not being able to execute a vulnerability. Just because it didn't work on the main interface doesn't mean the subdomains aren't affected.
 
 These are *MySQL credentials*. To use them you need to be **inside the machine** since MySQL is listening on `127.0.0.1`(localhost only).
@@ -232,7 +234,7 @@ We got the APP_KEY (else known as [Laravel Key](../../1-General/Concepts/Laravel
 
 ---
 
->[!info] Laravel APP_KEY
+>[!INFO] Laravel APP_KEY
 >The Laravel application key is a secret key used to:
 >1. **Encrypt/decrypt** cookies and session data
 >2. **Sign** data to prevent tampering
