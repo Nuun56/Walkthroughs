@@ -392,7 +392,7 @@ In this walk-through I am going to be documenting **two paths** I used to **esca
 - The first one being the intended route which exploits a **CVE chain attack**
 - Second one is going to be through **Copy Fail**
 
-> [!NOTE]
+> [!TIP]
 > **Copy Fail**
 > CVE-2026-31431 is a Linux kernel vulnerability in the `authencesn` AEAD cryptographic implementation that allows unprivileged processes to corrupt the page cache of readable files via AF_ALG sockets and splice() syscall manipulation. In other words, allows an ordinary user to instantly become root. Affected: Linux kernel versions with authencesn support (2017-2026)
 
