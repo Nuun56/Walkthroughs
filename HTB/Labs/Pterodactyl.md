@@ -234,7 +234,8 @@ We got the APP_KEY (else known as [Laravel Key](../../1-General/Concepts/Laravel
 
 ---
 
->[!INFO] Laravel APP_KEY
+>[!INFO] 
+>**Laravel APP_KEY**
 >The Laravel application key is a secret key used to:
 >1. **Encrypt/decrypt** cookies and session data
 >2. **Sign** data to prevent tampering
@@ -265,7 +266,8 @@ Note: the `{{` and `}}` around part of it in the raw output were just formatting
 
 ### Returning back to PEAR
 
->[!cite] Maximum impact
+>[!CITE]
+>**Maximum impact**
 >While **CVE-2025-49132** is fundamentally a Path Traversal bug in the `locales` feature, its capability isn't limited to just reading files. In **Phase 1**, we use the traversal to disclose sensitive configuration files (the database credentials and the Laravel App Key). In **Phase 2**, we leverage that exact same vulnerable endpoint alongside the leaked cryptographic data to trigger an unauthenticated Remote Code Execution (RCE) via PHP object handling.
 
 #####  More in depth about the vulnerability
@@ -292,7 +294,8 @@ We achieve Remote Command Execution. The first thing we should do after achievin
 
 ### Reverse shell
 
->[!tip] Rev Shells
+>[!TIP] 
+>**Rev Shells**
 One of the most reliable, classic ways to get a remote terminal when standard methods (like a simple `nc -e /bin/bash` or `busybox`) are stripped out, blocked, or broken on the target system is a **Named Pipe Reverse Shell**.
 
 
