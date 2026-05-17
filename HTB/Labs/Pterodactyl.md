@@ -1,7 +1,10 @@
+<div align="center">
 ![](attachments/Pasted%20image%2020260424063607.png)
 
 By: https://app.hackthebox.com/users/2727685
+
 25.04.2026 - First interaction
+
 15.05.2026 - PWN & Finished Report
 
 ---
@@ -30,7 +33,7 @@ Also **ports 443 and 8080 closed, not filtered**. The ports are reachable but no
 
 ### Website 
 
-![473](attachments/Pasted%20image%2020260424200344.png)
+![324](attachments/Pasted%20image%2020260424200344.png)
 
 Only things we can interact with are:
 * Minecraft Server IP - copy 
