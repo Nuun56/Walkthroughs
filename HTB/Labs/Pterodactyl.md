@@ -563,5 +563,4 @@ pterodactyl:/root # cat root.txt
 ```
 
 
-
-![](attachments/Pasted%20image%2020260515072945.png)
+<img src="attachments/Pasted%20image%2020260515072945.png">
