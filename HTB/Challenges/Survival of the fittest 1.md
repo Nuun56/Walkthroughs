@@ -25,7 +25,7 @@ A foundry tutorial can be found in the `/docs` endpoint.
 
 From the main website, the challenge as it seems is to defeat the monsters by getting their health bar to go to 0. A one-click does too little damage, and repetitive clicking doesn't seem to work as they heal fast.
 
-![](attachments/HTB_ChallangeSurvivalOfTheFittest.gif)
+<img src="attachments/HTB_ChallangeSurvivalOfTheFittest.gif">
 
 To figure out how we need to go about this we first need to take a look at the **contract sources** we are provided with.
 ### Setup.sol
