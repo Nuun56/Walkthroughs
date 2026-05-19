@@ -5,9 +5,6 @@
 
 By: https://app.hackthebox.com/users/2727685
 
-25.04.2026 - First interaction
-
-15.05.2026 - PWN & Finished Report
 
 ---
 
