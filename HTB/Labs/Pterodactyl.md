@@ -5,6 +5,7 @@
 
 By: https://app.hackthebox.com/users/2727685
 
+![](attachments/Pasted%20image%2020260424063607.png)
 
 ---
 
