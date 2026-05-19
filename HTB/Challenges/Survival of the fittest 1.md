@@ -21,8 +21,7 @@ curl -L https://foundry.paradigm.xyz | bash && foundryup
 A foundry tutorial can be found in the `/docs` endpoint.
 
 ## Goal
-
-![517](attachments/Pasted%20image%2020260514093329.png)
+<img src="attachments/Pasted%20image%2020260514093329.png" width="517">
 
 From the main website, the challenge as it seems is to defeat the monsters by getting their health bar to go to 0. A one-click does too little damage, and repetitive clicking doesn't seem to work as they heal fast.
 
