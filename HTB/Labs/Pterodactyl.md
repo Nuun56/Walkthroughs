@@ -3,7 +3,7 @@
   <img src="attachments/Pasted%20image%2020260424063607.png">
 </div>
 
-[Machine Page](https://app.hackthebox.com/machines/Pterodactyl?sort_by=created_at&sort_type=desc)
+[Machine Page](https://app.hackthebox.com/machines/Pterodactyl?sort_by=created_at&sort_type=desc) <br>
 By: https://app.hackthebox.com/users/2727685
 
 
