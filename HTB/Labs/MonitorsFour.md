@@ -8,6 +8,8 @@
 **CVEs Exploited:** CVE-2025-24367  
 **Topics:** Subdomain enumeration, IDOR, Cacti RCE, Docker API abuse, Container escape
 
+By: https://app.hackthebox.com/users/2727685
+
 ---
 
 ## Overview
