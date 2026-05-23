@@ -2,7 +2,7 @@
 <img src="attachments/Pasted%20image%2020260522092700.png">
 </div>
 
-[Machine](https://app.hackthebox.com/machines/MonitorsFour?sort_by=created_at&sort_type=desc) <br>
+[Machine Page](https://app.hackthebox.com/machines/MonitorsFour?sort_by=created_at&sort_type=desc) <br>
 **Difficulty:** Easy  
 **OS:** Windows (running Docker Desktop with WSL2)  
 **CVEs Exploited:** CVE-2025-24367  
