@@ -1,5 +1,7 @@
-[![](https://github.com/Nuun56/Walkthroughs/raw/main/HTB/Labs/attachments/Pasted%20image%2020260522092700.png)](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/attachments/Pasted%20image%2020260522092700.png)
 
+<div align="center">
+<img src="obsidian://open?vault=Pentesting&file=x-Published%20GIT%2FHTB%2FLabs%2Fattachments%2FPasted%20image%2020260522092700.png">
+</div>
 [Machine Page](https://app.hackthebox.com/machines/MonitorsFour?sort_by=created_at&sort_type=desc)  
 **Difficulty:** Easy  
 **OS:** Windows (running Docker Desktop with WSL2)  
@@ -35,7 +37,7 @@ Key findings:
 
 Visiting `http://monitorsfour.htb` in the browser shows a standard corporate landing page, nothing immediately exploitable.
 
-[![](https://github.com/Nuun56/Walkthroughs/raw/main/HTB/Labs/attachments/Pasted%20image%2020260522124851.png)](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/attachments/Pasted%20image%2020260522124851.png)
+![](https://github.com/Nuun56/Walkthroughs/raw/main/HTB/Labs/attachments/Pasted%20image%2020260522124851.png)
 
 ---
 
@@ -80,7 +82,7 @@ We discovered `cacti.monitorsfour.htb`. Add it to `/etc/hosts`:
 sudo bash -c 'echo "10.129.2.116 cacti.monitorsfour.htb" >> /etc/hosts'
 ```
 
-[![](https://github.com/Nuun56/Walkthroughs/raw/main/HTB/Labs/attachments/Pasted%20image%2020260522124910.png)](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/attachments/Pasted%20image%2020260522124910.png)
+![](https://github.com/Nuun56/Walkthroughs/raw/main/HTB/Labs/attachments/Pasted%20image%2020260522124910.png)
 
 ---
 
@@ -362,4 +364,4 @@ cat /host_root/Users/Administrator/Desktop/root.txt
 
 ---
 
-[![](https://github.com/Nuun56/Walkthroughs/raw/main/HTB/Labs/attachments/Pasted%20image%2020260523123912.png)](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/attachments/Pasted%20image%2020260523123912.png)
+![](https://github.com/Nuun56/Walkthroughs/raw/main/HTB/Labs/attachments/Pasted%20image%2020260523123912.png)
