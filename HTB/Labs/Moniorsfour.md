@@ -2,6 +2,7 @@
 <div align="center">
 <img src="attachments/Pasted%20image%2020260522092700.png">
 </div>
+
 [Machine Page](https://app.hackthebox.com/machines/MonitorsFour?sort_by=created_at&sort_type=desc)  
 **Difficulty:** Easy  
 **OS:** Windows (running Docker Desktop with WSL2)  
@@ -14,15 +15,11 @@ By: [https://app.hackthebox.com/users/2727685](https://app.hackthebox.com/users/
 
 ## Overview
 
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#overview)
-
 MonitorsFour is a Windows machine running Docker Desktop with WSL2. The attack chain involves discovering a hidden subdomain hosting a vulnerable Cacti instance, exploiting an IDOR vulnerability on the main site to leak credentials, using those credentials to exploit an authenticated RCE vulnerability in Cacti to land a shell inside a Docker container, and finally escaping to the host via an unauthenticated Docker API, achieving root-level access on the Windows host.
 
 ---
 
 ## Step 1 -- Reconnaissance
-
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#step-1----reconnaissance)
 
 We start with an **nmap scan** to discover open ports:
 
@@ -42,8 +39,6 @@ Visiting `http://monitorsfour.htb` in the browser shows a standard corporate lan
 ---
 
 ## Step 2 -- Subdomain Enumeration with ffuf
-
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#step-2----subdomain-enumeration-with-ffuf)
 
 Note
 
@@ -87,8 +82,6 @@ sudo bash -c 'echo "10.129.2.116 cacti.monitorsfour.htb" >> /etc/hosts'
 ---
 
 ## Step 3 -- Credential Discovery via IDOR
-
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#step-3----credential-discovery-via-idor)
 
 Since Cacti requires authentication, we go back to the main site and look for hidden API endpoints.
 
@@ -155,8 +148,6 @@ Password: wonderful1
 
 ## Step 4 -- Exploiting CVE-2025-24367 (Cacti Authenticated RCE)
 
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#step-4----exploiting-cve-2025-24367-cacti-authenticated-rce)
-
 **About CVE-2025-24367**  
 This is an authenticated Remote Code Execution vulnerability in Cacti versions up to 1.2.28. It abuses the graph templates functionality to write a malicious PHP file into the web root, which can then be triggered to execute arbitrary commands, including a reverse shell.
 
@@ -189,8 +180,6 @@ We received a shell as `www-data` inside a Docker container.
 ---
 
 ## Step 5 -- Container Enumeration
-
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#step-5----container-enumeration)
 
 **Stabilizing the shell:**
 
@@ -252,8 +241,6 @@ Result: `marcus:wonderful1` Same password as before, confirming password reuse.
 
 ## Step 6 -- User Flag
 
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#step-6----user-flag)
-
 While enumerating the container we noticed `/home/marcus` existed and was readable by `www-data`. The user flag was sitting right there:
 
 ```shell
@@ -273,8 +260,6 @@ This returned a `WinRMAuthorizationError` — the credentials did not work for W
 ---
 
 ## Step 7 -- Docker API Escape (Privilege Escalation to Root)
-
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#step-7----docker-api-escape-privilege-escalation-to-root)
 
 Note
 
@@ -349,8 +334,6 @@ cat /host_root/Users/Administrator/Desktop/root.txt
 ---
 
 ## Summary
-
-[](https://github.com/Nuun56/Walkthroughs/blob/main/HTB/Labs/MonitorsFour.md#summary)
 
 |Step|Action|Tool/Technique|
 |---|---|---|
