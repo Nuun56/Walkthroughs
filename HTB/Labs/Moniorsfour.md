@@ -19,7 +19,7 @@ MonitorsFour is a Windows machine running Docker Desktop with WSL2. The attack c
 
 ---
 
-## Step 1 -- Reconnaissance
+## Reconnaissance
 
 We start with an **nmap scan** to discover open ports:
 
@@ -38,7 +38,7 @@ Visiting `http://monitorsfour.htb` in the browser shows a standard corporate lan
 
 ---
 
-## Step 2 -- Subdomain Enumeration with ffuf
+## Subdomain Enumeration with ffuf
 
 Note
 
@@ -81,7 +81,7 @@ sudo bash -c 'echo "10.129.2.116 cacti.monitorsfour.htb" >> /etc/hosts'
 
 ---
 
-## Step 3 -- Credential Discovery via IDOR
+## Credential Discovery via IDOR
 
 Since Cacti requires authentication, we go back to the main site and look for hidden API endpoints.
 
@@ -146,7 +146,7 @@ Password: wonderful1
 
 ---
 
-## Step 4 -- Exploiting CVE-2025-24367 (Cacti Authenticated RCE)
+## Exploiting CVE-2025-24367 (Cacti Authenticated RCE)
 
 **About CVE-2025-24367**  
 This is an authenticated Remote Code Execution vulnerability in Cacti versions up to 1.2.28. It abuses the graph templates functionality to write a malicious PHP file into the web root, which can then be triggered to execute arbitrary commands, including a reverse shell.
@@ -179,7 +179,7 @@ We received a shell as `www-data` inside a Docker container.
 
 ---
 
-## Step 5 -- Container Enumeration
+## Container Enumeration
 
 **Stabilizing the shell:**
 
@@ -239,7 +239,7 @@ Result: `marcus:wonderful1` Same password as before, confirming password reuse.
 
 ---
 
-## Step 6 -- User Flag
+## User Flag
 
 While enumerating the container we noticed `/home/marcus` existed and was readable by `www-data`. The user flag was sitting right there:
 
@@ -259,7 +259,7 @@ This returned a `WinRMAuthorizationError` — the credentials did not work for W
 
 ---
 
-## Step 7 -- Docker API Escape (Privilege Escalation to Root)
+## Docker API Escape (Privilege Escalation to Root)
 
 Note
 
