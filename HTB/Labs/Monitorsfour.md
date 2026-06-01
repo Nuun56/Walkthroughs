@@ -335,15 +335,16 @@ cat /host_root/Users/Administrator/Desktop/root.txt
 
 ## Summary
 
-|Step|Action|Tool/Technique|
-|---|---|---|
-|1|Port scan|nmap|
-|2|Subdomain discovery|ffuf virtual host fuzzing|
-|3|Credential leak|IDOR on /user?token=0 + MD5 cracking|
-|4|RCE on Cacti|CVE-2025-24367|
-|5|Container enumeration|Manual + MySQL|
-|6|User flag|Readable from /home/marcus in container|
-|7|Docker API escape|Unauthenticated Docker daemon|
+| Step | Action                | Tool/Technique                                   |
+| ---- | --------------------- | ------------------------------------------------ |
+| 1    | Port scan             | nmap                                             |
+| 2    | Subdomain discovery   | ffuf virtual host fuzzing                        |
+| 3    | Credential leak       | IDOR on /user?token=0 + MD5 cracking             |
+| 4    | RCE on Cacti          | CVE-2025-24367                                   |
+| 5    | Container enumeration | Manual + MySQL                                   |
+| 6    | User flag             | Readable from /home/marcus in container          |
+| 7    | Docker API escape     | Unauthenticated Docker daemon                    |
+| 8    | Root flag             | Readable from /../Administrator/Desktop/root.txt |
 
 ---
 
