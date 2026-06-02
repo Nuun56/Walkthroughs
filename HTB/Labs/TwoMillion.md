@@ -1,6 +1,5 @@
-<div align="center">
-<img src="attachments/Pasted%20image%2020260525132758.png">
-</div>
+
+![264](attachments/Pasted%20image%2020260525132758.png)
 
 [Machine Page](https://app.hackthebox.com/machines/TwoMillion?sort_by=created_at&sort_type=desc) 
 **Difficulty:** Easy
