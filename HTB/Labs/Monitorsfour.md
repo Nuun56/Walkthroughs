@@ -259,8 +259,7 @@ This returned a `WinRMAuthorizationError`. The credentials did not work for WinR
 
 ## Docker API Escape (Privilege Escalation to Root)
 
-Note
-
+>[!NOTE]
 **What is the Docker API?**  
 Docker exposes a REST API (usually on port 2375) for managing containers. If this API is unauthenticated and reachable, an attacker can create new containers, mount the host filesystem, and effectively escape the container entirely.
 
