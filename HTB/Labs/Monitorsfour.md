@@ -40,8 +40,7 @@ Visiting `http://monitorsfour.htb` in the browser shows a standard corporate lan
 
 ## Subdomain Enumeration with ffuf
 
-Note
-
+>[!NOTE]
 **What is subdomain enumeration?**  
 Large web applications often run multiple services under different subdomains (e.g. `admin.example.com`, `api.example.com`). These subdomains are sometimes forgotten or less secured than the main site. We fuzz for them by sending requests with different `Host` headers and looking for responses that differ from the default.
 
@@ -85,8 +84,7 @@ sudo bash -c 'echo "10.129.2.116 cacti.monitorsfour.htb" >> /etc/hosts'
 
 Since Cacti requires authentication, we go back to the main site and look for hidden API endpoints.
 
-Note
-
+>[!NOTE]
 **What is an IDOR?**  
 IDOR stands for Insecure Direct Object Reference. It's a vulnerability where an application exposes internal objects (like database records) directly through user-controlled input — without properly checking if the requester is authorized to access them. A classic example is changing `?id=5` to `?id=1` and getting someone else's data.
 
@@ -137,7 +135,7 @@ The admin hash `56b32eb43e6f15395f6c46c1c9e1cd36` was cracked instantly using Cr
 ```
 
 **Finding the right username:**  
-Logging in as `admin:wonderful1` didn't work on Cacti. However, looking at the leaked user data — name `Marcus Higgins`, email `admin@monitorsfour.htb`, we tried plausible username variations: `marcus`, `mhiggins`, `higgins`. The correct combo turned out to be:
+Logging in as `admin:wonderful1` didn't work on Cacti. However, looking at the leaked user data: name `Marcus Higgins`, email `admin@monitorsfour.htb`, we tried plausible username variations: `marcus`, `mhiggins`, `higgins`. The correct combo turned out to be:
 
 ```
 Username: marcus
