@@ -2,11 +2,7 @@
 <img src="attachments/Pasted%20image%2020260525132758.png">
 </div>
 
-[Machine Page](https://app.hackthebox.com/machines/TwoMillion?sort_by=created_at&sort_type=desc)
-**Difficulty:** Easy
-**Os:** Linux
-**CVEs Exploited:** CVE-2023-0386 (OverlayFS / FUSE privilege escalation)
-**Topics:** JS source analysis, ROT13 / Base64 decoding, API enumeration, Broken access control, Command injection, Password reuse, Linux kernel LPE
+[Machine Page](https://app.hackthebox.com/machines/TwoMillion?sort_by=created_at&sort_type=desc) <br>**Difficulty:** Easy<br>**Os:** Linux<br>**CVEs Exploited:** CVE-2023-0386 (OverlayFS / FUSE privilege escalation)<br>**Topics:** JS source analysis, ROT13 / Base64 decoding, API enumeration, Broken access control, Command injection, Password reuse, Linux kernel LPE
 
 **By:** [https://app.hackthebox.com/users/2727685](https://app.hackthebox.com/users/2727685)
 
