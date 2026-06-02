@@ -3,11 +3,8 @@
 </div>
 
 [Machine Page](https://app.hackthebox.com/machines/TwoMillion?sort_by=created_at&sort_type=desc) 
-
 **Difficulty:** Easy
-
 **Os:** Linux
-
 **CVEs Exploited:** CVE-2023-0386 (OverlayFS / FUSE privilege escalation)
 **Topics:** JS source analysis, ROT13 / Base64 decoding, API enumeration, Broken access control, Command injection, Password reuse, Linux kernel LPE
 
