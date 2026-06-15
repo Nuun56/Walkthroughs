@@ -1,5 +1,5 @@
 <div align="center">
-<img src="attachments/Pasted%20image%2020260525132758.png">
+<img src="attachments/Pasted%20image%2020260615200852.png">
 </div>
 
 [Machine Page](https://app.hackthebox.com/machines/TwoMillion?sort_by=created_at&sort_type=desc) <br>**Difficulty:** Easy<br>**Os:** Linux<br>**CVEs Exploited:** CVE-2023-0386 (OverlayFS / FUSE privilege escalation)<br>**Topics:** JS source analysis, ROT13 / Base64 decoding, API enumeration, Broken access control, Command injection, Password reuse, Linux kernel LPE

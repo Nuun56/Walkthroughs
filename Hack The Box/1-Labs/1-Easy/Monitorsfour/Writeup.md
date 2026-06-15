@@ -1,6 +1,6 @@
 
 <div align="center">
-<img src="attachments/Pasted%20image%2020260522092700.png">
+<img src="attachments/Pasted%20image%2020260615200952.png">
 </div>
 
 [Machine Page](https://app.hackthebox.com/machines/MonitorsFour?sort_by=created_at&sort_type=desc)  
