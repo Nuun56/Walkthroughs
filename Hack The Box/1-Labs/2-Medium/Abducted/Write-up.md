@@ -4,6 +4,7 @@
 
 [Machine Page](https://app.hackthebox.com/machines/Abducted?sort_by=created_at&sort_type=desc)  
 **Difficulty:** Medium
+
 **OS:** Linux
 **CVEs Exploited:**  
 **Topics:** Topics: CVE-2026-4480 · Samba Suite · Polkit · Anonymous Share Listing · Password Reuse · Rclone · Decryption · SSH Key insertion · Python · Systemd drop-in location
