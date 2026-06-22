@@ -2,7 +2,7 @@
 <img src="attachments/Pasted%20image%2020260608094620.png">
 </div>
 
-[Machine Page]([https://app.hackthebox.com/machines/MonitorsFour?sort_by=created_at&sort_type=desc](https://app.hackthebox.com/machines/Abducted?sort_by=created_at&sort_type=desc))  
+[Machine Page](https://app.hackthebox.com/machines/Abducted?sort_by=created_at&sort_type=desc)  
 **Difficulty:** Medium
 **OS:** Linux
 **CVEs Exploited:**  
