@@ -4,7 +4,7 @@
 </div>
 
 [Machine Page](https://app.hackthebox.com/machines/Nexus?sort_by=created_at&sort_type=desc)  
-**Difficulty:** Easy
+**Difficulty:** Easy <br>
 **OS:** Linux
 **CVEs Exploited:** CVE-2026-38526 
 **Topics:** 
