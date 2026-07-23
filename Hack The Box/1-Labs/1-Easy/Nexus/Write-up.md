@@ -5,8 +5,8 @@
 
 [Machine Page](https://app.hackthebox.com/machines/Nexus?sort_by=created_at&sort_type=desc)  
 **Difficulty:** Easy <br>
-**OS:** Linux
-**CVEs Exploited:** CVE-2026-38526 
+**OS:** Linux <br>
+**CVEs Exploited:** CVE-2026-38526 <br>
 **Topics:** 
 
 By: [https://app.hackthebox.com/users/2727685](https://app.hackthebox.com/users/2727685)
