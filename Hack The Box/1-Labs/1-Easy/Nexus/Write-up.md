@@ -7,14 +7,14 @@
 **Difficulty:** Easy <br>
 **OS:** Linux <br>
 **CVEs Exploited:** CVE-2026-38526 <br>
-**Topics:** 
+**Topics:** Krayin CRM, Unauthenticated File Upload, PHP Reverse Shell, Gitea, Template Repository Abuse, Path Traversal, Raw Git Object Crafting, SSH Key Injection, Privilege Escalation
 
 By: [https://app.hackthebox.com/users/2727685](https://app.hackthebox.com/users/2727685)
 
 ## Overview
 ---
 
-
+Nexus is an easy Linux machine running a public-facing energy authority website that fronts a Gitea instance and a Krayin CRM installation on separate subdomains. Foothold is gained by discovering an exposed .env file in a Gitea repository whose commit history leaks a database password, which is reused against a Krayin CRM login found via a leaked hiring manager email in a job posting. Krayin is then exploited via CVE-2026-38526, an unauthenticated file upload flaw in the email attachment feature, allowing a PHP webshell to be uploaded and executed for a shell as www-data. Reused credentials found in Krayin's own configuration file grant SSH access as jones. Privilege escalation to root abuses a Gitea template-sync systemd timer whose script joins untrusted git tree paths with os.path.join() without sanitizing directory traversal sequences; by crafting raw git objects containing tree entries with ".." components, a specially built "template" repository causes the sync script to write an SSH public key directly into /root/.ssh/authorized_keys, granting root access.
 
 ---
 
