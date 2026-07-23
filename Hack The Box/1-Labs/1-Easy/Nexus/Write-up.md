@@ -7,31 +7,14 @@
 **Difficulty:** Easy
 **OS:** Linux
 **CVEs Exploited:** CVE-2026-38526 
-**Topics:** CVE-2025-57819 · FreePBX · Endpoint Manager (EPM) · Unauthenticated SQLi · cron_jobs RCE · DAHDI init.conf injection · incrond abuse · init script sourcing · Asterisk · Privilege Escalation.
-
-```
- What to Include
-- Every **CVE** you used
-- Every **tool** beyond the basics (nmap is borderline, sqlmap yes)
-- Every **technique** that required actual knowledge to execute
-- The **service/technology** at the center of the box
- What to Skip
-- Obvious basics like `cat`, `ls`, `cd`
-- Generic terms like "Linux" or "enumeration" — too vague to be useful
-- Anything you tried but didn't work
-```
-
+**Topics:** 
 
 By: [https://app.hackthebox.com/users/2727685](https://app.hackthebox.com/users/2727685)
 
 ## Overview
 ---
 
-```
-[Machine name] is a [difficulty] Linux/Windows machine 
-running [service/tech]. Foothold is gained via [CVE/technique], 
-which allows [what it does]. Root is obtained by [privesc method].
-```
+
 
 ---
 
